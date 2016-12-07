@@ -11,7 +11,7 @@ if [ -n "$DISPLAY" -a -n "$(which osascript)" ]; then
   osascript -e 'tell application "Terminal" to do script "'"$* "'"'
 elif [ -n "$DISPLAY" -a -n "$(which xterm)" ]; then
   echo "Not Starting $name, run seperatley from QT"
-  #xterm -iconic -xrm 'XTerm*selectToClipboard: true' -xrm 'XTerm*initialFont: 6' -n "$name" -name "$name" -T "$name" -hold -e $* &
+  xterm -iconic -xrm 'XTerm*selectToClipboard: true' -xrm 'XTerm*initialFont: 6' -n "$name" -name "$name" -T "$name" -hold -e $* &
 elif [ -n "$DISPLAY" -a -n "$(which konsole)" ]; then
   konsole --hold -e $*
 elif [ -n "$DISPLAY" -a -n "$(which gnome-terminal)" ]; then

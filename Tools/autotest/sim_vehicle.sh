@@ -250,18 +250,18 @@ case $FRAME in
     +|quad|quad-*)
 	BUILD_TARGET="sitl"
         MODEL="$FRAME"
-        DEFAULTS_PATH="$autotest/default_params/copter_params.parm"
+        DEFAULTS_PATH="$autotest/default_params/copter.parm"
 	;;
     X*)
 	BUILD_TARGET="sitl"
         EXTRA_PARM="param set FRAME 1;"
         MODEL="$FRAME"
-        DEFAULTS_PATH="$autotest/default_params/copter_params.parm"
+        DEFAULTS_PATH="$autotest/default_params/copter.parm"
 	;;
     octa*)
 	BUILD_TARGET="sitl-octa"
         MODEL="$FRAME"
-        DEFAULTS_PATH="$autotest/default_params/copter_params.parm"
+        DEFAULTS_PATH="$autotest/default_params/copter.parm"
 	;;
     tri*)
 	BUILD_TARGET="sitl-tri"
